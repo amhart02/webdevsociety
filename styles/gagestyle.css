@@ -8,6 +8,7 @@ a{
     border: 2px solid #222222;
     border-radius: 7px 7px 0 0;
     background-color: #222222;
+    border-bottom: 0;
 }
 
 
@@ -98,7 +99,6 @@ h3{
         padding:10px;
         text-align: center;
         padding-top: 20px;
-        border-right: 2px solid #222222 ;
         height: calc(100vh - 30px);
         min-width: 60px;
     }
@@ -109,6 +109,9 @@ h3{
         height:100%;
         margin-top:5px;
         padding-bottom: 20px;
+        border: 2px solid black;
+        border-radius: 7px 7px 0 0;
+        border-bottom: 0;
 
     }
 
@@ -119,8 +122,7 @@ h3{
     .tabs{
         width:100%;
         border-bottom: 2px solid #222222;
-        height:5%;
-        /* padding-bottom: 5px; */
+        height:5%;overflow:hidden;
     }
 }
 @media (max-width:999px){
@@ -156,8 +158,6 @@ h3{
         vertical-align: top;
         width:auto;
         height:calc(100% - 105px);
-        border-left: 2px solid #222222;
-        border-right: 2px solid #222222 ;
         
     }
 
@@ -182,7 +182,9 @@ h3{
         margin:5px 2px;
         margin-bottom: 0;
         text-align: center;
-
+        border: 2px solid black;
+        border-radius: 7px 7px 0 0;
+        border-bottom: 0;
     }
 
     .tabs{
