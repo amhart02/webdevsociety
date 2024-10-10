@@ -11,8 +11,6 @@ a{
     border-bottom: 0;
 }
 
-
-
 .page p{
     text-align: left;
 
@@ -46,6 +44,7 @@ h3{
 @media (min-width: 1000px) {
 
     body{
+        position:relative;
         background-color: black;
         color:white;
         font-family: Arial, Helvetica, sans-serif;
@@ -54,12 +53,14 @@ h3{
     }
 
     .content{
+        position:absolute;
+        top: 38px;
         display:inline-block;
         background-color: #444444;
         background-image: url(../images/gageback.jpg);
         background-size: cover;
         width: calc(100%);
-        height:calc(95% - 30px);
+        height:calc(100% - 38px);
         padding: 10px;
         text-align: right;
         overflow: hidden;
@@ -72,13 +73,13 @@ h3{
     }
 
     main{
+        position:relative;
         display:flexbox;
         flex-grow:1;
         vertical-align: top;
         width:auto;
         height:100vh;
         border-left: 2px solid #222222;
-        border-right: 2px solid #222222 ;
         margin:0;
     }
 
@@ -103,26 +104,29 @@ h3{
         min-width: 60px;
     }
 
-    .tab{
-        display: inline-block;
-        padding:5px 10px;
-        height:100%;
-        margin-top:5px;
-        padding-bottom: 20px;
-        border: 2px solid black;
-        border-radius: 7px 7px 0 0;
-        border-bottom: 0;
-
-    }
 
     .tab:hover{
         background-color: #666666;
         border-radius: 7px 7px 0 0;
     }
+    .tab{
+        display: inline-block;
+        padding:5px;
+        padding-bottom: 0;
+        margin:5px 2px;
+        margin-bottom: 0;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 7px 7px 0 0;
+        border-bottom: 0;
+    }
+
     .tabs{
         width:100%;
         border-bottom: 2px solid #222222;
-        height:5%;overflow:hidden;
+        position:fixed;
+        top:0;
+        background-color: black;
     }
 }
 @media (max-width:999px){
