@@ -3,6 +3,16 @@ body{
     text-align: center;
 }
 
+ul a{
+    text-align: center;
+    background-color: cadetblue;
+    padding: 5px;
+    font-size: x-large;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: .05px;
+}
+
 header{
     display: block;
     border: 2px darkblue solid;
