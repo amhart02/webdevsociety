@@ -1,2 +1,0 @@
-# webdevsociety
-WDD Society Website
