@@ -9,6 +9,7 @@
 body {
     margin: 0;
     background-color: var(--primary-color);
+    font-family: "ubuntu", Helvetica, sans-serif;
 }
 
 a {
