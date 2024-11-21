@@ -1,0 +1,15 @@
+main{
+    width: 80%;
+    margin:0 auto;
+    
+}
+
+#form-div {
+    width: 100%;
+}
+
+form{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
