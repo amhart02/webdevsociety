@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #006eb6;
-  --accent-color: #c9c5c5;
+  --accent-color: #d4d4d4;
 
   --font-family-primary: "Ubuntu", sans-serif;
   --font-family-secondary: "neue-haas-grotesk-text", sans-serif;
@@ -135,4 +135,36 @@ footer {
   text-align: center;
   background: #006eb6;
   padding: 30px;
+}
+
+/* About us page */
+.mission-statement{
+  margin: 7.5% 15%;
+  background-color: var(--accent-color);
+  padding: 5%;
+}
+.mission-statement h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 10px 200px;
+  padding-bottom: 20px;
+  border-bottom: solid var(--primary-color) 3px;
+}
+.mission-statement p {
+  padding-top: 20px;
+  margin: 10px;
+}
+
+.three-about-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 5%;
+}
+.about-card {
+  background-color: var(--primary-color);
+  padding: 5%;
+  width: 250px;
+  color: white;
+  border-radius: 10px;
 }
