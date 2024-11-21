@@ -127,8 +127,19 @@ nav a:hover {
 
 .cool-card {
   border: 1px solid black;
-  padding: 180px;
+  padding: 140px;
   margin: 25px;
+}
+#member-card {
+  background: rgb(232, 133, 133);
+}
+
+#gallery-card {
+  background-color: rgb(127, 174, 255);
+}
+
+#project-card {
+  background-color: rgb(174, 222, 172);
 }
 
 footer {
