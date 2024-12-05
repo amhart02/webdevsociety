@@ -138,10 +138,34 @@ footer {
 }
 
 /* About us page */
+.about-us-hero-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-hero-img {
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+  z-index: -6;
+}
+.about-us-title{
+  z-index: 6;
+  color: var(--primary-color);
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  font-size: 90px;
+  position: absolute;
+  background-color: rgb(255,255,255,0.9);
+  padding: 60px 80px;
+  border-radius: 10px;
+}
 .mission-statement{
   margin: 7.5% 15%;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
+  border: solid 5px var(--accent-color);
   padding: 5%;
+  border-radius: 10px;
 }
 .mission-statement h2 {
   text-align: center;
@@ -154,6 +178,7 @@ footer {
 .mission-statement p {
   padding-top: 20px;
   margin: 10px;
+  font-size: 20px;
 }
 
 .three-about-cards {
