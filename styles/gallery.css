@@ -1,0 +1,36 @@
+#gallery h1{
+    margin: 1em;
+    text-align: center;
+    color: #006eb6;
+}
+
+#photo-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#photo-cards p{
+    color: #006eb6;
+}
+
+.photo-card img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    aspect-ratio: 1/1;
+    border: 5px #006eb6 solid;
+    border-radius: 50px 20px;
+    transition: transform 0.3s ease, border-radius 0.3s ease;
+    cursor: pointer;
+}
+
+.photo-card img:active {
+    transform: scale(0.9) rotate(5deg);
+    border-radius: 20px 50px;
+}
+
+footer{
+    color: white;
+}

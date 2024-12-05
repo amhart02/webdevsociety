@@ -1,0 +1,19 @@
+[
+    {
+      "name": "Class 1",
+      "imageURL": "./images/class1.jpg"
+    },
+    {
+      "name": "Class 2",
+      "imageURL": "./images/class2.jpg"
+    },
+    {
+      "name": "High School Fair",
+      "imageURL": "./images/highschool_fair.jpg"
+    },
+    {
+      "name": "Society Fair",
+      "imageURL": "./images/society_fair.jpg"
+    }
+  ]
+  
