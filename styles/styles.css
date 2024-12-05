@@ -61,6 +61,14 @@ nav a:hover {
   border-radius: 5px;
   padding: 10px;
 }
+
+#nav-logo:hover {
+  color: none;
+  background-color: var(--primary-color);
+  padding: 0px;
+  border-radius: 0px;
+}
+
 #events {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -107,6 +115,11 @@ nav a:hover {
   transition: 0.3s ease;
   display: inline-block;
   margin-top: 60px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+  border-color: white;
+  /* text-shadow: 1px 2px 3px black; */
 }
 
 .about-us-btn:hover {
@@ -118,6 +131,7 @@ nav a:hover {
 
 .about-us-main-text {
   margin: 0;
+  text-shadow: 1px 2px 3px black;
 }
 
 #cool-cards {
@@ -127,8 +141,39 @@ nav a:hover {
 
 .cool-card {
   border: 1px solid black;
-  padding: 180px;
+  padding: 140px;
   margin: 25px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.cool-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#member-card {
+  background: rgb(232, 133, 133);
+}
+
+#member-card:hover {
+  background: rgb(222, 133, 130);
+}
+
+#gallery-card {
+  background-color: rgb(127, 174, 255);
+}
+
+#gallery-card:hover {
+  background-color: rgb(117, 174, 255);
+}
+
+#project-card {
+  background-color: rgb(174, 222, 172);
+}
+
+#project-card:hover {
+  background-color: rgb(164, 222, 172);
 }
 
 footer {
