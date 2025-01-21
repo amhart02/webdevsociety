@@ -10,7 +10,7 @@ const previous_projects = [
     },
     {
         title: "Halloween Websites",
-        urls: ["https://alexanderdombroski.github.io/halloween/"], // ADD OTHER HALLOWEEN SITES
+        urls: ["https://alexanderdombroski.github.io/halloween/"], // ADD OTHER HALLOWEEN SITE Links
         timeframe: "October 2024",
         desc: "Halloween Sites were created in preparation for halloween and to show to the high schoolers in Rexburg",
         img: "images/project_images/halloween-sites.jpg",
