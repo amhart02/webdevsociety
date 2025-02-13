@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://use.typekit.net/eyr8egr.css");
 
 :root {
   --primary-color: #006eb6;
-  --accent-color: #c9c5c5;
+  --accent-color: #d4d4d4;
 
   --font-family-primary: "Ubuntu", sans-serif;
   --font-family-secondary: "neue-haas-grotesk-text", sans-serif;
@@ -61,6 +61,14 @@ nav a:hover {
   border-radius: 5px;
   padding: 10px;
 }
+
+#nav-logo:hover {
+  color: none;
+  background-color: var(--primary-color);
+  padding: 0px;
+  border-radius: 0px;
+}
+
 #events {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -107,6 +115,11 @@ nav a:hover {
   transition: 0.3s ease;
   display: inline-block;
   margin-top: 60px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+  border-color: white;
+  /* text-shadow: 1px 2px 3px black; */
 }
 
 .about-us-btn:hover {
@@ -118,6 +131,7 @@ nav a:hover {
 
 .about-us-main-text {
   margin: 0;
+  text-shadow: 1px 2px 3px black;
 }
 
 #cool-cards {
@@ -127,12 +141,100 @@ nav a:hover {
 
 .cool-card {
   border: 1px solid black;
-  padding: 180px;
+  padding: 140px;
   margin: 25px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.cool-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#member-card {
+  background: rgb(232, 133, 133);
+}
+
+#member-card:hover {
+  background: rgb(222, 133, 130);
+}
+
+#gallery-card {
+  background-color: rgb(127, 174, 255);
+}
+
+#gallery-card:hover {
+  background-color: rgb(117, 174, 255);
+}
+
+#project-card {
+  background-color: rgb(174, 222, 172);
+}
+
+#project-card:hover {
+  background-color: rgb(164, 222, 172);
 }
 
 footer {
   text-align: center;
   background: #006eb6;
   padding: 30px;
+}
+
+/* About us page */
+.about-us-hero-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-hero-img {
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+  z-index: -6;
+}
+.about-us-title{
+  z-index: 6;
+  color: var(--primary-color);
+  font-family: var(--font-family-secondary);
+  font-weight: 500;
+  font-size: 90px;
+  position: absolute;
+  background-color: rgb(255,255,255,0.9);
+  padding: 60px 80px;
+  border-radius: 10px;
+}
+.mission-statement{
+  margin: 7.5% 15%;
+  /* background-color: var(--accent-color); */
+  border: solid 5px var(--accent-color);
+  padding: 5%;
+  border-radius: 10px;
+}
+.mission-statement h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 10px 200px;
+  padding-bottom: 20px;
+  border-bottom: solid var(--primary-color) 3px;
+}
+.mission-statement p {
+  padding-top: 20px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.three-about-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 5%;
+}
+.about-card {
+  background-color: var(--primary-color);
+  padding: 5%;
+  width: 250px;
+  color: white;
+  border-radius: 10px;
 }
