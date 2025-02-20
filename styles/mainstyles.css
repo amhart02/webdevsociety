@@ -25,4 +25,15 @@ body{
     margin:30px auto;
     border-radius: 15px;
     padding:15px;
+  
+.preview {
+    width:600px; height:400px;
+    -webkit-transform:scale(.25);
+    -ms-transform:scale(.5);
+    transform:scale(.5);
+    -webkit-transform-origin:0 0; 
+    -ms-transform-origin:0 0; 
+    transform-origin:0 0; 
+    border:4px solid blue;
+    margin:0 0 -200px 0;
 }
