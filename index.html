@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/index.js" defer></script>
     <title>Web Design & Development Society</title>
   </head>
   <body>
@@ -16,6 +17,7 @@
             width="100px"
             id="nav-logo"
         /></a>
+        <button type="button" id="menu-button">Menu</button>
         <a href="members.html">Members</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
@@ -29,28 +31,13 @@
         <img id="cool-picture" src="./images/header-hero-img.jpg" />
         <h1 id="motto">Crafting the Web, Empowering Innovation.</h1>
       </div>
-      <div id="events-container">
-        <h1>Events</h1>
+      <h1 class="header">Events</h1>
         <div id="events">
-          <input class="event-arrows" type="button" value="<" />
-          <div class="card">
-            <h3>Title</h3>
-            <p>Event info</p>
-          </div>
-          <div class="card">
-            <h3>Title</h3>
-            <p>Event info</p>
-          </div>
-          <div class="card">
-            <h3>Title</h3>
-            <p>Event info</p>
-          </div>
-          <div class="card">
-            <h3>Title</h3>
-            <p>Event info</p>
-          </div>
-          <input class="event-arrows" type="button" value=">" />
+        <input id="left-arrow" class="event-arrows" type="button" value="<" />
+        <div class="event-container">
+          
         </div>
+        <input id='right-arrow' class="event-arrows" type="button" value=">" />
       </div>
       <div id="about-us">
         <img id="about-picture" />
