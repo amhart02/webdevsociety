@@ -8,6 +8,7 @@
   --font-family-primary: "Ubuntu", sans-serif;
   --font-family-secondary: "neue-haas-grotesk-text", sans-serif;
 }
+
 body {
   background-color: white;
   margin: 0;
@@ -39,6 +40,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 nav {
   background-color: var(--primary-color);
   height: 130px;
@@ -46,6 +48,7 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
+
 nav a {
   color: white;
   text-decoration: none;
@@ -55,6 +58,7 @@ nav a {
   font-size: 20px;
   transition: 0.3s ease;
 }
+
 nav a:hover {
   color: var(--primary-color);
   background-color: white;
@@ -75,11 +79,14 @@ nav a:hover {
   grid-template-rows: 2;
   grid-gap: 16px;
 }
-.card {
+
+.card,
+.presidency {
   background-color: var(--accent-color);
   height: 300px;
   padding: 10px;
 }
+
 
 #events-container {
   margin: 20px;
@@ -188,30 +195,34 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .about-us-hero-img {
   object-fit: cover;
   height: 600px;
   width: 100%;
   z-index: -6;
 }
-.about-us-title{
+
+.about-us-title {
   z-index: 6;
   color: var(--primary-color);
   font-family: var(--font-family-secondary);
   font-weight: 500;
   font-size: 90px;
   position: absolute;
-  background-color: rgb(255,255,255,0.9);
+  background-color: rgb(255, 255, 255, 0.9);
   padding: 60px 80px;
   border-radius: 10px;
 }
-.mission-statement{
+
+.mission-statement {
   margin: 7.5% 15%;
   /* background-color: var(--accent-color); */
   border: solid 5px var(--accent-color);
   padding: 5%;
   border-radius: 10px;
 }
+
 .mission-statement h2 {
   text-align: center;
   font-size: 40px;
@@ -220,6 +231,7 @@ footer {
   padding-bottom: 20px;
   border-bottom: solid var(--primary-color) 3px;
 }
+
 .mission-statement p {
   padding-top: 20px;
   margin: 10px;
@@ -231,10 +243,17 @@ footer {
   justify-content: space-around;
   margin: 10% 5%;
 }
+
 .about-card {
   background-color: var(--primary-color);
   padding: 5%;
   width: 250px;
   color: white;
   border-radius: 10px;
+}
+
+.hero-image {
+  height: 400px;
+  width: 50%;
+  margin: 0 auto;
 }
