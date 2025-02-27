@@ -108,3 +108,5 @@ checkArrowAvailability();
 checkArrowAvailability();
 updateEvents();
 
+
+const emailInput=document.querySelector('#email-input');
