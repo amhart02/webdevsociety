@@ -15,7 +15,6 @@ menuButton.addEventListener('click', function() {
     });
 
 window.addEventListener('resize', function() {
-    console.log('resize');
     windowWidth = window.innerWidth;
     if(windowWidth<840){
         eventSize = 1;
