@@ -1,3 +1,7 @@
+import { getEvents } from "./events.mjs";
+
+const events = getEvents();
+
 let windowWidth = window.innerWidth;
 let eventSize = 0;
 if(windowWidth<840){
@@ -27,50 +31,7 @@ window.addEventListener('resize', function() {
     checkArrowAvailability();
 });
 
-const events = [
-    {
-        title: 'Society Meeting',
-        date: '2/19/2025',
-        time: '5:30pm',
-        location: 'STC 231',
-        description: 'Discussing upcoming events and projects'
-    },
-    {
-        title: 'Society Meeting',
-        date: '2/26/2025',
-        time: '5:30pm',
-        location: 'STC 231',
-        description: 'Discussing upcoming events and projects'
-    },
-    {
-        title: 'Society Meeting',
-        date: '3/5/2025',
-        time: '5:30pm',
-        location: 'STC 231',
-        description: 'Discussing upcoming events and projects'
-    },
-    {
-        title: 'Society Meeting',
-        date: '3/12/2025',
-        time: '5:30pm',
-        location: 'STC 231',
-        description: 'Discussing upcoming events and projects'
-    },
-    {
-        title: 'Society Meeting',
-        date: '3/19/2025',
-        time: '5:30pm',
-        location: 'STC 231',
-        description: 'Discussing upcoming events and projects'
-    },
-    {
-        title: 'Society Meeting',
-        date: '3/26/2025',
-        time: '5:30pm',
-        location: 'STC 231',
-        description: 'Discussing upcoming events and projects'
-    }
-]
+
 
 const eventContainer = document.querySelector('.event-container');
 let eventIndex = 0;
@@ -81,6 +42,7 @@ const updateEvents = () => {
         events.slice(eventIndex, eventIndex+eventSize).forEach(event => {
             const eventElement = document.createElement('div');
             eventElement.classList.add('event');
+            event.id%2==0?eventElement.classList.add('evenEvent'):eventElement.classList.add('oddEvent');
             eventElement.innerHTML = `
                 <h3>${event.title}</h3>
                 <p>Date: ${event.date}</p>
@@ -95,6 +57,7 @@ const updateEvents = () => {
         events.slice(eventIndex, events.length).forEach(event => {
             const eventElement = document.createElement('div');
             eventElement.classList.add('card');
+            event.id%2==0?eventElement.classList.add('evenEvent'):eventElement.classList.add('oddEvent');
             eventElement.innerHTML = `
                 <h3>${event.title}</h3>
                 <p>Date: ${event.date}</p>
@@ -113,11 +76,14 @@ const rightArrow = document.querySelector('#right-arrow');
 const checkArrowAvailability = () => {
     if(eventIndex==0){
         leftArrow.classList.add('unavailable');
-    } else  if(eventIndex==events.length - eventSize){
+    } else {
+        leftArrow.classList.remove('unavailable');
+    }
+    if(eventIndex==events.length - eventSize){
         rightArrow.classList.add('unavailable');
+
     } else {
         rightArrow.classList.remove('unavailable');
-        leftArrow.classList.remove('unavailable');
     }
 
 }
