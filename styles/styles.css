@@ -53,6 +53,9 @@ body {
   background-color: white;
   margin: 0;
   font-family: var(--font-family-secondary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .card {
@@ -202,13 +205,14 @@ nav a {
   font-family: var(--font-family-primary);
   font-size: 20px;
   transition: .3s ease;
+  padding:10px;
 }
 
 nav a:hover {
   color: var(--primary-color);
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  transform: scale(1.05);
 }
 
 #nav-logo:hover {
@@ -255,11 +259,20 @@ nav a:hover {
   font-size: 50px;
   color: var(--primary-color);
   aspect-ratio: 1;
-  background-color: white;
+  background-color: lightgray;
+  border-radius: 10px;
+  height:70px;
+  aspect-ratio: 1/1;
+  transition: .3s;
 }
 
 .event-arrows:active {
   color:#003457
+}
+
+.event-arrows:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 #about-us-desc {
@@ -327,6 +340,7 @@ nav a:hover {
 .cool-card:hover {
   transform: scale(1.05);
   cursor: pointer;
+  color:white;
 }
 
 #member-card, #gallery-card, #project-card {
@@ -341,6 +355,7 @@ footer {
   text-align: center;
   background: #006eb6;
   padding: 30px;
+  margin-top: auto;
 }
 /* About us page */
 .about-us-hero-img-div {
