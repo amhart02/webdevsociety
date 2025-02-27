@@ -9,7 +9,6 @@
   --font-family-primary: "Ubuntu", sans-serif;
   --font-family-secondary: "neue-haas-grotesk-text", sans-serif;
 }
-
 .about-us-btn {
   color: white;
   text-decoration: none;
@@ -194,6 +193,7 @@ nav {
   transition: 1s ease;
   padding: 10px;
 }
+
 nav a {
   color: white;
   text-decoration: none;
@@ -203,6 +203,7 @@ nav a {
   font-size: 20px;
   transition: .3s ease;
 }
+
 nav a:hover {
   color: var(--primary-color);
   background-color: white;
@@ -217,35 +218,163 @@ nav a:hover {
   border-radius: 0px;
 }
 
+.header{
+  padding:20px;
+}
+
+#events {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+}
+.card,
+.presidency {
+  background-color: var(--accent-color);
+  height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#events-container {
+  margin: 20px;
+}
+
+.event-container {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:20px;
+}
+
+.event-arrows {
+  border: none;
+  font-size: 50px;
+  color: var(--primary-color);
+  aspect-ratio: 1;
+  background-color: white;
+}
+
+.event-arrows:active {
+  color:#003457
+}
+
+#about-us-desc {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.8em;
+  color: white;
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.about-us-btn {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  font-family: var(--font-family-primary);
+  font-size: 20px;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin-top: 60px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  /* text-shadow: 1px 2px 3px black; */
+}
+
+.about-us-btn:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.about-us-main-text {
+  margin: 0;
+  text-shadow: 1px 1px 3px black;
+}
+
+#cool-cards {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  gap:20px;
+  padding:20px;
+}
+
+.cool-card {
+  display: flex;
+  width: 350px;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.cool-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#member-card, #gallery-card, #project-card {
+  background: var(--secondary-color);
+}
+
+#member-card:hover, #gallery-card:hover, #project-card:hover {
+  background: var(--primary-color);
+}
+
+footer {
+  text-align: center;
+  background: #006eb6;
+  padding: 30px;
+}
 /* About us page */
 .about-us-hero-img-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .about-us-hero-img {
   object-fit: cover;
   height: 600px;
   width: 100%;
   z-index: -6;
 }
-.about-us-title{
+
+.about-us-title {
   z-index: 6;
   color: var(--primary-color);
   font-family: var(--font-family-secondary);
   font-weight: 500;
   font-size: 90px;
   position: absolute;
-  background-color: rgb(255,255,255,0.9);
+  background-color: rgb(255, 255, 255, 0.9);
   padding: 60px 80px;
   border-radius: 10px;
 }
-.mission-statement{
+
+.mission-statement {
   margin: 7.5% 15%;
   border: solid 5px var(--accent-color);
   padding: 5%;
   border-radius: 10px;
 }
+
 .mission-statement h2 {
   text-align: center;
   font-size: 40px;
@@ -254,6 +383,7 @@ nav a:hover {
   padding-bottom: 20px;
   border-bottom: solid var(--primary-color) 3px;
 }
+
 .mission-statement p {
   padding-top: 20px;
   margin: 10px;
@@ -265,6 +395,7 @@ nav a:hover {
   justify-content: space-around;
   margin: 10% 5%;
 }
+
 .about-card {
   background-color: var(--primary-color);
   padding: 5%;
@@ -273,8 +404,16 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* End of about us page */
 
+.hero-image {
+  height: 400px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer{
+  color:white;
+}
 
 .open{
   max-height:400px;

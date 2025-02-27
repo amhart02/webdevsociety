@@ -18,6 +18,14 @@ body{
     text-align: left;
 }
 
+.presidency {
+    display:block;
+    width:calc(80% - 15px);
+    height:600px;
+    margin:30px auto;
+    border-radius: 15px;
+    padding:15px;
+  
 .preview {
     width:600px; height:400px;
     -webkit-transform:scale(.25);
