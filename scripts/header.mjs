@@ -7,12 +7,12 @@ export function renderHeader() {
               id="nav-logo"
           />
           <button type="button" id="menu-button">Menu</button>
-          <a href="/index.html" >Home</a>
-          <a href="/members.html">Members</a>
-          <a href="/projects.html">Projects</a>
-          <a href="/contact.html">Contact</a>
-          <a href="/gallery.html">Gallery</a>
-          <a href="/about.html">About</a>
+          <a href="index.html" >Home</a>
+          <a href="members.html">Members</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
         </nav>`;
 
   const currentUrl = window.location.pathname;
