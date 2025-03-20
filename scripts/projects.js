@@ -1,3 +1,6 @@
+import { renderFooter } from "./footer.mjs";
+import { renderHeader } from "./header.mjs";
+
 const previous_projects = [
     {
         title: "",
@@ -31,6 +34,8 @@ const next_projects = [
 
 
 (function loadPage() {
+    renderHeader();
+    renderFooter();
     // document.querySelector('.upcoming-projects').innerHTML = nextSectionTemplate();
     document.querySelector('.previous-projects').innerHTML = prevSectionTemplate();
 
