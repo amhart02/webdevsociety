@@ -188,11 +188,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-secondary);
   font-weight: 400;
   text-shadow: 1px 1px 3px black;
+  z-index:2;
 }
 
 nav {
   background-color: var(--primary-color);
-  max-height: 145px;
+  max-height: 175px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,6 +201,10 @@ nav {
   transition: 1s ease;
   padding: 10px;
   overflow: hidden;
+}
+
+nav img {
+
 }
 
 nav a {
@@ -224,6 +229,7 @@ nav a:hover, nav a.active {
   background-color: var(--primary-color);
   padding: 10px;
   border-radius: 0px;
+  /* height: 80px; */
 }
 
 .header{
