@@ -17,6 +17,7 @@ export function renderHeader() {
   let currentUrl='';
   if(window.location.pathname.split('/').pop()){
     currentUrl = "./"+window.location.pathname.split('/').pop();
+    window.location.pathname
   } else {
     currentUrl = "./index.html";
   }
