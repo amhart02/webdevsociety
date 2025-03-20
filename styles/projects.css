@@ -7,9 +7,21 @@ body {
 }
 
 .hero-image {
-    height: 600px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
+}
+
+.centered {
+    max-width:50rem;
+    margin: 0 auto;
+    padding: inherit 1rem;
+}
+
+.previous-projects h2 {
+    max-width:50rem;
+    margin: 0 auto;
+    padding: inherit 1rem;
 }
 
 .previous-projects article {
