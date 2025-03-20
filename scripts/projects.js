@@ -12,6 +12,13 @@ const previous_projects = [
         contributers: [],
     },
     {
+        title: "Brother Shoaf's Site",
+        urls: [],
+        timeframe: "September 2024 - April 2025",
+        desc: "Brother Shoaf is a music professor who we helped build a site for, showing off his projects, gallery, and other things",
+        contributers: ["Alayna Hart", "Ricky Vang"] // ADD MORE CONTRIBUTERS 
+    },
+    {
         title: "Halloween Websites",
         urls: ["https://alexanderdombroski.github.io/halloween/"], // ADD OTHER HALLOWEEN SITE Links
         timeframe: "October 2024",
@@ -23,9 +30,9 @@ const previous_projects = [
 ];
 const next_projects = [
     {
-        title: "",
-        desc: "",
-        timeframe: ""
+        title: "Society Page",
+        desc: "We will finish the society page, and add projects and members as semesters go on.",
+        timeframe: "Sept 2024 - ongoing"
     }
 ];
 
@@ -36,9 +43,8 @@ const next_projects = [
 (function loadPage() {
     renderHeader();
     renderFooter();
-    // document.querySelector('.upcoming-projects').innerHTML = nextSectionTemplate();
+    document.querySelector('.upcoming-projects').innerHTML = nextSectionTemplate();
     document.querySelector('.previous-projects').innerHTML = prevSectionTemplate();
-
 
 })();
 
@@ -51,19 +57,24 @@ const next_projects = [
 function nextSectionTemplate() {
     return `
         <h2>Upcoming Projects</h2>
-        ${next_projects.map(prevProjectTemplate).join('')}
-    `
+        ${next_projects.map(nextProjectTemplate).join('')}
+    `;
 }
-function nextProjectTemplate() {
+function nextProjectTemplate(project) {
+    const timeframe = project.timeframe ? `<p>${project.timeframe}</p>` : "";
     return `
-    
-    `
+        <article>
+            <h3>${project.title}</h3>
+            <p>${project.desc}</p>
+            ${timeframe}
+        </article>
+    `;
 }
 function prevSectionTemplate() {
     return `
         <h2>Past Projects</h2>
         ${previous_projects.map(prevProjectTemplate).join('')}
-    `
+    `;
 }
 function prevProjectTemplate(project) {
     return `
@@ -79,5 +90,5 @@ function prevProjectTemplate(project) {
             </div>
             ${project.img ? `<img src="${project.img}" alt="${project.alt}" />` : ""}
         </article>
-    `
+    `;
 }
