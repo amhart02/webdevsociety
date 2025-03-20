@@ -13,14 +13,16 @@ const previous_projects = [
     },
     {
         title: "Brother Shoaf's Site",
-        urls: [],
+        urls: ["https://amhart02.github.io/musicportfolio/"],
         timeframe: "September 2024 - April 2025",
         desc: "Brother Shoaf is a music professor who we helped build a site for, showing off his projects, gallery, and other things",
+        img: "images/project_images/musicportfolio.png",
+        alt: "Brother Shoaf's music portfolio",
         contributers: ["Alayna Hart", "Ricky Vang"] // ADD MORE CONTRIBUTERS 
     },
     {
         title: "Halloween Websites",
-        urls: ["https://alexanderdombroski.github.io/halloween/"], // ADD OTHER HALLOWEEN SITE Links
+        urls: ["https://alexanderdombroski.github.io/halloween/","https://gagedorl.github.io/halloweensite/index.html"], // ADD OTHER HALLOWEEN SITE Links
         timeframe: "October 2024",
         desc: "Halloween Sites were created in preparation for halloween and to show to the high schoolers in Rexburg",
         img: "images/project_images/halloween-sites.jpg",
