@@ -15,10 +15,10 @@ const previous_projects = [
         title: "Brother Shoaf's Site",
         urls: ["https://amhart02.github.io/musicportfolio/"],
         timeframe: "September 2024 - April 2025",
-        desc: "Brother Shoaf is a music professor who we helped build a site for, showing off his projects, gallery, and other things",
+        desc: "We created a portfolio website for Brother Shoaf, an adjunct music professor, to showcase his projects, gallery, and other work.",
         img: "/webdevsociety/images/project_images/musicportfolio.png",
         alt: "Brother Shoaf's music portfolio",
-        contributers: ["Alayna Hart", "Ricky Vang"] // ADD MORE CONTRIBUTERS 
+        contributers: ["Alayna Hart", "Ricky Vang", "CJ Hylton", "Taylor Alvey", "James Fawcett"] 
     },
     {
         title: "Halloween Websites",
