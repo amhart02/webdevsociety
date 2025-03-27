@@ -4,7 +4,7 @@ export function renderHeader() {
   window.location.pathname
   const header = document.querySelector('header');
   header.innerHTML = `<nav><img
-              src="/webdevsociety/images/whitelogo.svg"
+              src="/webdevsociety/images/whitelogo.png"
               alt="Logo for the WDD Society"
               width="100px"
               id="nav-logo"
